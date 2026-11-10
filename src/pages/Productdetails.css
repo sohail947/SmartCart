@@ -1,0 +1,263 @@
+
+/* Main Product Details Container */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Product Information Layout */
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Product Image */
+.product-info img {
+  width: 45%;
+  max-width: 450px;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Product Content */
+.product-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.product-content h2 {
+  color: #2563eb;
+}
+
+.product-content p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* Product Rating */
+.product-rating,
+.details-rating {
+  color: #e5a000;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+/* Product Buttons */
+.product-content button {
+  padding: 12px 22px;
+  margin: 10px 10px 15px 0;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.product-content button:hover {
+  background: #1d4ed8;
+}
+
+/* Back to Products Link */
+.product-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-content a:hover {
+  text-decoration: underline;
+}
+
+/* Review Form and Customer Reviews */
+.review-section,
+.customer-reviews {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 10px;
+}
+
+.review-section h2,
+.customer-reviews h2 {
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+/* Star Rating Selection */
+.star-rating {
+  margin: 10px 0;
+}
+
+.star-rating span {
+  margin-right: 5px;
+}
+
+/* Review Textarea */
+.review-section textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.review-section textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Submit Review Button */
+.review-section button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.review-section button:hover {
+  background: #1d4ed8;
+}
+
+/* Individual Customer Review */
+.review-card {
+  padding: 15px;
+  margin-top: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.review-stars {
+  color: orange;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.review-card small {
+  color: #777;
+}
+
+/* Delete Review Button */
+.review-card button {
+  display: block;
+  margin-top: 12px;
+  padding: 10px 15px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-card button:hover {
+  background: #b91c1c;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .product-details {
+    margin: 30px auto;
+    padding: 22px;
+  }
+
+  .product-info {
+    gap: 25px;
+  }
+
+  .product-info img {
+    width: 42%;
+    height: 280px;
+  }
+
+  .product-content h1 {
+    font-size: 27px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .product-details {
+    width: calc(100% - 24px);
+    margin: 20px auto;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .product-info {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .product-info img {
+    width: 100%;
+    max-width: none;
+    height: 230px;
+  }
+
+  .product-content h1 {
+    font-size: 25px;
+  }
+
+  .product-content h2 {
+    font-size: 21px;
+  }
+
+  .product-content p {
+    font-size: 14px;
+  }
+
+  .product-content button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .review-section,
+  .customer-reviews {
+    padding: 15px;
+  }
+
+  .review-section h2,
+  .customer-reviews h2 {
+    font-size: 21px;
+  }
+
+  .review-section button {
+    width: 100%;
+  }
+
+  .review-card button {
+    width: auto;
+  }
+}
+
